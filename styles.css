@@ -152,7 +152,7 @@ main {
   height: 700px;
   border-radius: 30px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-  background-image: url('images/Medicine.avif');
+  background-image: url("images/Medicine.avif");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -163,11 +163,11 @@ main {
   .content-wrapper {
     max-width: 1200px;
   }
-  
+
   .intro-section h1 {
     font-size: 60px;
   }
-  
+
   .hero-image {
     width: 350px;
     height: 450px;
@@ -178,11 +178,11 @@ main {
   .intro-section h1 {
     font-size: 55px;
   }
-  
+
   .intro-section p {
     font-size: 18px;
   }
-  
+
   .hero-image {
     width: 320px;
     height: 420px;
@@ -195,22 +195,19 @@ main {
     align-items: center;
     text-align: center;
   }
-  
+
   .intro-section {
     padding-right: 0;
     margin-bottom: 50px;
     max-width: 100%;
   }
-  
+
   .hero-image {
     width: 346px;
     height: 425px;
   }
-}
 
-/* Footer */
-footer {
-  width: 100%;
-  height: 100px;
-  background-color: #f5f5f5;
+  .logo-container p {
+    display: none;
+  }
 }
