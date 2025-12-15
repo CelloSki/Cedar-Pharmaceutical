@@ -7,33 +7,27 @@
 
 /* Header & Navigation */
 header {
+  display: flex;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
+  height: 10vh;
   z-index: 100;
   background-color: transparent;
-}
-
-nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-  height: 70px;
   background-color: #0a4174;
   border-bottom-right-radius: 67px;
   border-bottom-left-radius: 67px;
   box-shadow: 0 0 10px #49769f;
-  padding: 0 40px;
-  position: relative;
+  align-items: center;
+  gap: 2vh;
 }
 
 /* Logo */
 .logo-container {
   display: flex;
   align-items: center;
-  gap: 15px;
+  gap: 1rem;
 }
 
 .logo-container img {
@@ -50,15 +44,16 @@ nav {
 }
 
 /* Navigation Links */
-.nav-links {
+
+nav {
   display: flex;
-  gap: 30px;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
+  justify-content: center;
+  align-items: flex-end;
+  width: 100%;
+  gap: 0.5vh;
 }
 
-.nav-links a {
+nav a {
   color: white;
   text-decoration: none;
   font-size: 16px;
@@ -68,18 +63,19 @@ nav {
   white-space: nowrap;
 }
 
-.nav-links a:hover {
+nav a:hover {
   background-color: #49769f;
   box-shadow: 0 0 15px #0a4174;
 }
 
 /* FAQ Link */
-.faq-link {
+.faq-logo {
   display: flex;
-  align-items: center;
+  width: 20%;
+  justify-content: space-around;
 }
 
-.faq-link img {
+.faq-logo img {
   width: 40px;
   height: 24px;
 }
@@ -208,6 +204,34 @@ main {
   }
 
   .logo-container p {
+    display: none;
+  }
+}
+
+@media (max-width: 700px) {
+  header {
+    height: 30vh;
+    gap: 2vh;
+    display: block;
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  main {
+    margin-top: 30vh;
+  }
+}
+
+@media (max-width: 880px) {
+  .faq-logo {
+    display: none;
+  }
+
+  .logo-container {
     display: none;
   }
 }
